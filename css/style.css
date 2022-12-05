@@ -342,24 +342,23 @@ header.masthead {
     #my-stack .middle-row {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     #my-stack .stack {
-        width: 20%;
+        width: 40%;
         margin: 0 0.3rem !important;
     }
     #my-stack .stack::after {
-        padding-top: 1rem;
-        padding-bottom: 6rem;
+        content: '';
+        display: none;
     }
     #my-stack .stack-name {
-        width: 20%;
-        margin: 0 0.3rem !important;
-        margin-top: 4rem !important;
-    }
-    #my-stack .middle-row h5 {
-        font-size: 0.8rem;
+        display: none;
     }
     #portfolio {
         margin-top: 5rem;
+    }
+    .service-card {
+        margin: 0 1rem;
     }
 }

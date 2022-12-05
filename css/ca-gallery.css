@@ -97,7 +97,7 @@ body {
     align-items: center;
     justify-content: space-around; */
     border-left: 5px solid black;
-    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.5); */
 }
 .offcanvas-aside img {
     border-radius: 50%;
