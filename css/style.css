@@ -159,6 +159,101 @@ header.masthead {
     border: 1px solid white;
 }
 
-#portfolio {
-    background: dark;
+/* #portfolio {
+    background: #000000;
+}
+
+#portfolio > * {
+    color: white;
+} */
+/* #portfolio {
+    background: #dedee0;
+} */
+
+/* #portfolio > * {
+    color: white;
+} */
+
+#my-stack {
+}
+
+#my-stack .stack {
+    padding: 2rem;
+    border-radius: 50%;
+    /* margin: 0 1.3rem; */
+}
+#my-stack .stack:nth-child(2) {
+    margin-left: -2rem;
+    padding: 2rem;
+    border-radius: 50%;
+    background: #54554d;
+}
+#my-stack .stack:nth-child(3) {
+    padding: 2rem;
+    border-radius: 50%;
+    background: #f08b27;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+}
+#my-stack .stack:nth-child(4) {
+    padding: 2rem;
+    border-radius: 50%;
+    background: #27608c;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+}
+#my-stack .stack:nth-child(5) {
+    padding: 2rem;
+    border-radius: 50%;
+    background: #99c14c;
+    margin-right: -2rem;
+}
+#my-stack .stack img {
+    width: 100%;
+    height: 100%;
+}
+
+#my-stack .stack::after {
+    content: '';
+    position: relative;
+    top: 90%;
+    left: -50%;
+    display: inline;
+    padding: 4.5rem 0rem;
+    margin: 0;
+    border-right: 3px solid rgb(5, 69, 74);
+    z-index: -1;
+}
+
+#my-stack .my-stack-paragraph {
+    padding-top: 0.5rem;
+}
+
+#my-stack .stack-name {
+    margin-top: 5rem;
+    border-bottom-left-radius: 22px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 22px;
+    padding-bottom: 0.4rem;
+    color: white;
+}
+
+#my-stack .stack-name:nth-child(2) {
+    margin-left: -2rem;
+    background: #54554d;
+}
+#my-stack .stack-name:nth-child(3) {
+    background: #f08b27;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+}
+#my-stack .stack-name:nth-child(4) {
+    background: #27608c;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+}
+#my-stack .stack-name:nth-child(5) {
+    background: #99c14c;
+    margin-right: -2rem;
 }
