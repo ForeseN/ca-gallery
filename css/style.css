@@ -49,6 +49,7 @@ header.masthead {
     color: #154e46;
 }
 #mainNav .active {
+    color: white !important;
     border-bottom: 5px #154e46 solid;
 }
 
