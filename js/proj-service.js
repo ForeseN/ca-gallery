@@ -4,7 +4,7 @@ const gProjects = [
     {
         id: 'chess',
         name: 'Chess',
-        title: 'Better push those boxes',
+        title: 'A day without chess is like... Just kidding I have no idea',
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'none',
         publishedAt: 1668686400000,
@@ -13,7 +13,7 @@ const gProjects = [
     {
         id: 'minesweeper',
         name: 'Minesweeper',
-        title: 'Better push those boxes',
+        title: 'If you know how to play Minesweeper, you are a legend',
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'https://foresen.github.io/Minesweeper/',
         publishedAt: 1669377600000,
@@ -22,7 +22,7 @@ const gProjects = [
     {
         id: 'pokerhouse',
         name: 'PokerHouse',
-        title: 'Better push those boxes',
+        title: "I don't even fold my laundry",
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'https://foresen.github.io/PokerHouse-Bootstrap/',
         publishedAt: 1670155200000,
@@ -31,7 +31,7 @@ const gProjects = [
     {
         id: 'pacman',
         name: 'Pacman',
-        title: 'Better push those boxes',
+        title: 'WAKA WAKA WAKA WAKA WAKA WAKA WAKA WAKA',
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'none',
         publishedAt: 1668945600000,
@@ -40,7 +40,7 @@ const gProjects = [
     {
         id: 'pixelperfectdesign',
         name: 'Pixel Perfect Design',
-        title: 'Better push those boxes',
+        title: 'I am here to blow away the crowd',
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'none',
         publishedAt: 1669636800000,
@@ -49,7 +49,7 @@ const gProjects = [
     {
         id: 'bookshop',
         name: 'Poker Bookshop',
-        title: 'Better push those boxes',
+        title: 'May the flop be with you',
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'https://foresen.github.io/Poker-Bookshop/',
         publishedAt: 1669896000000,
