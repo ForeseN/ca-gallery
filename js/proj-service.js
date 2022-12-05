@@ -1,6 +1,6 @@
 'use strict'
 
-const projects = [
+const gProjects = [
     {
         id: 'chess',
         name: 'Chess',
@@ -17,7 +17,7 @@ const projects = [
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'projs/minesweeper',
         publishedAt: 1448693940000,
-        labels: ['Matrixes', 'keyboard events'],
+        labels: ['Matrixes', 'Recursion', 'UI/UX'],
     },
     {
         id: 'pokerhouse',
@@ -26,12 +26,11 @@ const projects = [
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'projs/pokerhouse',
         publishedAt: 1448693940000,
-        labels: ['Matrixes', 'keyboard events'],
+        labels: ['Bootstrap'],
     },
-    // same
     {
-        id: 'chess',
-        name: 'Chess',
+        id: 'pacman',
+        name: 'Pacman',
         title: 'Better push those boxes',
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'projs/chess',
@@ -39,21 +38,29 @@ const projects = [
         labels: ['Matrixes', 'keyboard events'],
     },
     {
-        id: 'minesweeper',
-        name: 'Minesweeper',
+        id: 'pixelperfectdesign',
+        name: 'Pixel Perfect Design',
         title: 'Better push those boxes',
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'projs/minesweeper',
         publishedAt: 1448693940000,
-        labels: ['Matrixes', 'keyboard events'],
+        labels: ['HTML', 'CSS'],
     },
     {
-        id: 'pokerhouse',
-        name: 'PokerHouse',
+        id: 'bookshop',
+        name: 'Poker Bookshop',
         title: 'Better push those boxes',
         desc: 'lorem ipsum lorem ipsum lorem ipsum',
         url: 'projs/pokerhouse',
         publishedAt: 1448693940000,
-        labels: ['Matrixes', 'keyboard events'],
+        labels: ['MVC', 'CRUD', 'UI/UX'],
     },
 ]
+
+function getProjects() {
+    return gProjects
+}
+
+function getProject(id) {
+    return gProjects.find(project => project.id === id)
+}
