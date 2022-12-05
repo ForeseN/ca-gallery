@@ -52,7 +52,8 @@ function openModal(projectId) {
     $('.modal-new h2').text(project.name)
     $('.modal-new .item-intro').text(project.title)
     // $('.modal .desc').text(project.desc)
-    $('.modal-new .date').text(project.publishedAt)
+    $('.modal-new .date').text(new Date(project.publishedAt).toLocaleDateString())
+    $('.modal-new .categories').text(project.labels.join(', '))
     $('.modal-new').show()
     $('.dark-overlay').show()
 }

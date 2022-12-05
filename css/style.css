@@ -26,7 +26,10 @@ header.masthead {
     z-index: -1;
 }
 
-.intro-lead-in span {
+/* .intro-lead-in span {
+    color: rgb(14, 154, 166);
+}
+#mainNav .navbar-brand {
     color: rgb(14, 154, 166);
 }
 
@@ -36,10 +39,30 @@ header.masthead {
     outline: none;
     border: none;
     border-radius: 6px;
+} */
+
+.intro-lead-in span {
+    color: rgb(21, 78, 70);
 }
 
 #mainNav .navbar-brand {
-    color: rgb(14, 154, 166);
+    color: #154e46;
+}
+
+.btn-xl {
+    background: rgb(21, 78, 70);
+    background: radial-gradient(circle, rgba(21, 78, 70, 1) 0%, rgba(21, 61, 56, 1) 62%);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 02px black;
+}
+
+.btn-xl:hover {
+    transform: scale(1.1);
 }
 
 /* .portfolio-modal {
@@ -256,4 +279,26 @@ header.masthead {
 #my-stack .stack-name:nth-child(5) {
     background: #99c14c;
     margin-right: -2rem;
+}
+
+.call-for-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: relative;
+    background: #131313;
+    margin-bottom: -215px;
+    border-radius: 20px;
+    padding: 3rem;
+}
+
+.call-for-action button {
+    background: rgb(60, 60, 60);
+    color: white;
+    padding: 0.6rem 1.2rem;
+}
+.call-for-action button:hover {
+    background: white;
+    color: black;
 }
