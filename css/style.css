@@ -25,7 +25,15 @@ header.masthead {
     height: 100vh;
     z-index: -1;
 }
+.stack img,
+.middle-row h5 {
+    transition: transform 0.3s ease-in-out;
+}
 
+.stack img:hover,
+.middle-row h5:hover {
+    transform: scale(1.2);
+}
 
 .intro-lead-in span {
     color: rgb(21, 78, 70);
@@ -90,7 +98,7 @@ header.masthead {
 }
 
 .btn-modal-check {
-    color: white;
+    color: white !important;
     margin: 0;
     padding: 0.5rem 1rem !important;
     background: rgb(21, 78, 70);
@@ -165,7 +173,6 @@ header.masthead {
     padding: 1.5rem;
     border: 1px solid white;
 }
-
 
 #my-stack {
 }
@@ -261,6 +268,10 @@ header.masthead {
     margin-bottom: -215px;
     border-radius: 20px;
     padding: 3rem;
+    transition: transform 0.3s ease-in-out;
+}
+.call-for-action:hover {
+    transform: scale(1.1);
 }
 
 .call-for-action button {

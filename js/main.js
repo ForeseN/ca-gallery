@@ -1,25 +1,25 @@
 'use strict'
 
-// A $( document ).ready() block.
 $(document).ready(initPage())
 
 function initPage() {
     renderProjects()
     addEventListeners()
+    hideModals()
+}
+
+function hideModals() {
     $('.modal-new').hide()
     $('.dark-overlay').hide()
+    $('.offcanvas-aside').removeClass('offcanvas-aside-open')
+    $('.offcanvas-btn').removeClass('offcanvas-btn-open')
 }
 
 function addEventListeners() {
-    $('.close-modal').on('click', function () {
-        $('.modal-new').hide()
-        $('.dark-overlay').hide()
-    })
-    $('.dark-overlay').on('click', function () {
-        $('.modal-new').hide()
-        $('.dark-overlay').hide()
-    })
+    $('.close-modal').on('click', hideModals)
+    $('.dark-overlay').on('click', hideModals)
     $('.contact-submit').on('click', submitForm)
+    $('.call-for-action button').on('click', openCanvas)
 }
 
 function submitForm() {
@@ -27,7 +27,6 @@ function submitForm() {
     const emailValue = $('.email-form').val()
     const subjectValue = $('.subject-form').val()
     const messageValue = $('.main-message-form').val()
-    console.log(nameValue, emailValue, subjectValue, messageValue)
 
     window.open(
         `https://mail.google.com/mail/?view=cm&fs=1&to=yagosik@gmail.com&su=${subjectValue}&body=from:${emailValue}, Name: ${nameValue}, \nMessage:${messageValue}&bcc=someone.else@example.com`
@@ -67,6 +66,14 @@ function openModal(projectId) {
     // $('.modal .desc').text(project.desc)
     $('.modal-new .date').text(new Date(project.publishedAt).toLocaleDateString())
     $('.modal-new .categories').text(project.labels.join(', '))
+    $('.modal-new .btn-modal-check').removeClass('disabled')
+    $('.modal-new .btn-modal-check').text('CHECK IT OUT')
+    $('.modal-new .btn-modal-check').attr('href', project.url)
+    console.log(project.url)
+    if (project.url == 'none') {
+        $('.modal-new .btn-modal-check').addClass('disabled')
+        $('.modal-new .btn-modal-check').text('Not Available')
+    }
     $('.dark-overlay').show()
     $('.modal-new').fadeIn(500)
 }
@@ -77,40 +84,3 @@ function addProjectsModalListeners() {
         openModal($(this).attr('data-project-id'))
     })
 }
-
-/* <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                  cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> */
