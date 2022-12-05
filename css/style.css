@@ -5,6 +5,8 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    background: url('../img/main-header-7.jpg') center center/cover;
+    background-attachment: fixed;
 }
 
 .main-header-bg::before {
