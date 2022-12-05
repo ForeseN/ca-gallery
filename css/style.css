@@ -26,20 +26,6 @@ header.masthead {
     z-index: -1;
 }
 
-/* .intro-lead-in span {
-    color: rgb(14, 154, 166);
-}
-#mainNav .navbar-brand {
-    color: rgb(14, 154, 166);
-}
-
-.btn-xl {
-    background: rgb(15, 70, 75);
-    background: radial-gradient(circle, rgba(15, 70, 75, 1) 0%, rgba(10, 54, 59, 1) 62%);
-    outline: none;
-    border: none;
-    border-radius: 6px;
-} */
 
 .intro-lead-in span {
     color: rgb(21, 78, 70);
@@ -69,13 +55,6 @@ header.masthead {
 .btn-xl:hover {
     transform: scale(1.1);
 }
-
-/* .portfolio-modal {
-    left: 50%;
-    width: 60%;
-    height: 100%;
-    transform: translateX(-50%);
-} */
 
 .modal-new {
     background: #eee;
@@ -187,20 +166,6 @@ header.masthead {
     border: 1px solid white;
 }
 
-/* #portfolio {
-    background: #000000;
-}
-
-#portfolio > * {
-    color: white;
-} */
-/* #portfolio {
-    background: #dedee0;
-} */
-
-/* #portfolio > * {
-    color: white;
-} */
 
 #my-stack {
 }
