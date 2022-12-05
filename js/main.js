@@ -19,6 +19,19 @@ function addEventListeners() {
         $('.modal-new').hide()
         $('.dark-overlay').hide()
     })
+    $('.contact-submit').on('click', submitForm)
+}
+
+function submitForm() {
+    const nameValue = $('.name-form').val()
+    const emailValue = $('.email-form').val()
+    const subjectValue = $('.subject-form').val()
+    const messageValue = $('.main-message-form').val()
+    console.log(nameValue, emailValue, subjectValue, messageValue)
+
+    window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&to=yagosik@gmail.com&su=${subjectValue}&body=from:${emailValue}, Name: ${nameValue}, \nMessage:${messageValue}&bcc=someone.else@example.com`
+    )
 }
 
 function renderProjects() {
@@ -54,8 +67,8 @@ function openModal(projectId) {
     // $('.modal .desc').text(project.desc)
     $('.modal-new .date').text(new Date(project.publishedAt).toLocaleDateString())
     $('.modal-new .categories').text(project.labels.join(', '))
-    $('.modal-new').show()
     $('.dark-overlay').show()
+    $('.modal-new').fadeIn(500)
 }
 
 function addProjectsModalListeners() {

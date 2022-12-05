@@ -105,12 +105,12 @@ header.masthead {
     color: white;
     margin: 0;
     padding: 0.5rem 1rem !important;
-    background: rgb(15, 70, 75);
-    background: radial-gradient(circle, rgba(15, 70, 75, 1) 0%, rgba(10, 54, 59, 1) 62%);
+    background: rgb(21, 78, 70);
+    background: radial-gradient(circle, rgba(21, 78, 70, 1) 0%, rgba(21, 61, 56, 1) 62%);
 }
 .btn-modal-check:focus,
 .btn-modal-check:active {
-    background: rgb(15, 70, 75);
+    background: #154e46;
 }
 
 .modal-new img {
@@ -244,7 +244,7 @@ header.masthead {
     display: inline;
     padding: 4.5rem 0rem;
     margin: 0;
-    border-right: 3px solid rgb(5, 69, 74);
+    border-right: 3px solid black;
     z-index: -1;
 }
 
@@ -301,4 +301,21 @@ header.masthead {
 .call-for-action button:hover {
     background: white;
     color: black;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    margin: 0;
+}
+
+#contact button {
+    width: 100%;
+    background: rgb(21, 78, 70);
+    background: radial-gradient(circle, rgba(21, 78, 70, 1) 0%, rgba(21, 61, 56, 1) 62%);
+    color: white;
+}
+#contact ul li a {
+    background: rgb(21, 78, 70);
+    background: radial-gradient(circle, rgba(21, 78, 70, 1) 0%, rgba(21, 61, 56, 1) 62%);
 }
