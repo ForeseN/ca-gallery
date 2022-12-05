@@ -316,7 +316,7 @@ header.masthead {
 
 #contact button {
     width: 100%;
-    background: rgb(21, 78, 70);
+    background: #154e46;
     background: radial-gradient(circle, rgba(21, 78, 70, 1) 0%, rgba(21, 61, 56, 1) 62%);
     color: white;
 }
