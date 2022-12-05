@@ -69,7 +69,8 @@ body {
     right: 3%;
     height: 50px;
     width: 50px;
-    background: rgb(14, 154, 166);
+    background: rgb(15, 70, 75);
+    background: radial-gradient(circle, rgba(15, 70, 75, 1) 0%, rgba(10, 54, 59, 1) 62%);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -77,6 +78,7 @@ body {
     cursor: pointer;
     margin-right: 0;
     transition: all 0.3s ease;
+    color: white;
 }
 .offcanvas-btn-open {
     margin-right: 80vw;
@@ -128,7 +130,8 @@ body {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: rgb(14, 154, 166);
+    background: rgb(15, 70, 75);
+    background: radial-gradient(circle, rgba(15, 70, 75, 1) 0%, rgba(10, 54, 59, 1) 62%);
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
@@ -261,10 +264,11 @@ header.masthead .intro-text .intro-heading {
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
-    background: rgb(14, 154, 166);
+    background: rgb(15, 70, 75);
+    background: radial-gradient(circle, rgba(15, 70, 75, 1) 0%, rgba(10, 54, 59, 1) 62%);
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-    opacity: 1;
+    opacity: 0.9;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     font-size: 20px;
@@ -629,7 +633,13 @@ ul.social-buttons li a:hover {
     align-items: center;
 }
 .text-primary {
-    color: rgb(14, 154, 166) !important;
+    /* color: rgb(14, 154, 166) !important; */
+    color: rgb(15, 70, 75) !important;
+    color: radial-gradient(
+        circle,
+        rgba(15, 70, 75, 1) 0%,
+        rgba(10, 54, 59, 1) 62%
+    ) !important;
 }
 .btn-primary {
     font-weight: 700;
