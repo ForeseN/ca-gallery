@@ -55,6 +55,7 @@ header.masthead {
     outline: none;
     border: none;
     border-radius: 6px;
+    box-shadow: 2px 2px 15px 7px rgba(0, 0, 0, 0.7);
 }
 
 .text-shadow {
@@ -242,7 +243,7 @@ header.masthead {
     top: 90%;
     left: -50%;
     display: inline;
-    padding: 4.5rem 0rem;
+    padding: 5.3rem 0rem;
     margin: 0;
     border-right: 3px solid black;
     z-index: -1;
@@ -318,4 +319,47 @@ header.masthead {
 #contact ul li a {
     background: rgb(21, 78, 70);
     background: radial-gradient(circle, rgba(21, 78, 70, 1) 0%, rgba(21, 61, 56, 1) 62%);
+}
+
+@media screen and (min-width: 781px) {
+    .pc-hide {
+        display: none;
+    }
+}
+@media screen and (max-width: 780px) {
+    .mobile-hide {
+        display: none;
+    }
+    .masthead .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .arrow {
+        display: none;
+    }
+    #my-stack .middle-row {
+        display: flex;
+        justify-content: center;
+    }
+    #my-stack .stack {
+        width: 20%;
+        margin: 0 0.3rem !important;
+    }
+    #my-stack .stack::after {
+        padding-top: 1rem;
+        padding-bottom: 6rem;
+    }
+    #my-stack .stack-name {
+        width: 20%;
+        margin: 0 0.3rem !important;
+        margin-top: 4rem !important;
+    }
+    #my-stack .middle-row h5 {
+        font-size: 0.8rem;
+    }
+    #portfolio {
+        margin-top: 5rem;
+    }
 }
