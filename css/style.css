@@ -48,6 +48,9 @@ header.masthead {
 #mainNav .navbar-brand {
     color: #154e46;
 }
+#mainNav .active {
+    border-bottom: 5px #154e46 solid;
+}
 
 .btn-xl {
     background: rgb(21, 78, 70);
@@ -319,6 +322,14 @@ header.masthead {
 #contact ul li a {
     background: rgb(21, 78, 70);
     background: radial-gradient(circle, rgba(21, 78, 70, 1) 0%, rgba(21, 61, 56, 1) 62%);
+}
+
+footer {
+    background: #131313;
+}
+
+footer a {
+    color: white;
 }
 
 @media screen and (min-width: 781px) {
